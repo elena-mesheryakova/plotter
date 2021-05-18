@@ -1119,7 +1119,8 @@ body .mfp-bg {
 
 .basket-page__basket {
   padding: 0 27px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  min-height: 400px; }
 
 .basket-page__basket-list {
   margin-bottom: 26px;
@@ -1887,6 +1888,8 @@ body .jq-radio.checked .jq-radio__div {
     margin-left: 20px; }
   .header__search input {
     width: 98%; }
+  .header.header-shadow::before {
+    display: none; }
   .main {
     margin-top: 30px; }
   .header-shadow {

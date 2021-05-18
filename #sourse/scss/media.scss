@@ -295,6 +295,9 @@
   .header__search input {
     width: 98%;
   }
+  .header.header-shadow::before {
+    display: none;
+  }
   .main {
     margin-top: 30px;
   }
