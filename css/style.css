@@ -1763,6 +1763,9 @@ body .jq-radio.checked .jq-radio__div {
   display: inline-block;
   margin-right: 40px; }
 
+.lk-page__profile-save--edit {
+  padding: 15px 31px; }
+
 .lk-page__profile-none {
   font-weight: 500;
   color: #7f06b8;

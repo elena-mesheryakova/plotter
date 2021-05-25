@@ -1606,6 +1606,9 @@ body .jq-radio.checked .jq-radio__div {
     display: inline-block;
     margin-right: 40px;
   }
+  &-save--edit {
+    padding: 15px 31px;
+  }
   &-none {
     font-weight: 500;
     color: #7f06b8;
