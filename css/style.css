@@ -2403,7 +2403,9 @@ body .jq-radio.checked .jq-radio__div {
   .lk-page__profile-box input {
     width: 100%; }
   .lk-page__profile-btn {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .login-lk__form input {
+    min-width: 100%; } }
 
 @media (max-width: 490px) {
   .footer__contacts-mail {
