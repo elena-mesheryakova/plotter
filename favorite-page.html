@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SteelSkin</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/jquery.formstyler.css" />
+    <link rel="stylesheet" href="./css/jquery.formstyler.theme.css" />
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+  </head>
+  <body>
+    <header class="header header-shadow">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo" href="#"
+            ><img src="./images/logo.png" alt=""
+          /></a>
+          <div class="menu__nav">
+            <ul>
+              <li class="menu__nav-list">
+                <a class="menu__nav-link" href="#">Главная</a>
+              </li>
+              <li class="menu__nav-list">
+                <a class="menu__nav-link drop" href="#">Каталог</a>
+                <div class="menu__nav-drop">
+                  <ul class="menu__nav-item">
+                    <li class="menu__nav-drop-list">
+                      <a class="menu__nav-drop-link" href="#"
+                        >Известные Бренды</a
+                      >
+                    </li>
+                    <li class="menu__nav-drop-list">
+                      <a class="menu__nav-drop-link" href="#"
+                        >Фильмы и супер герои</a
+                      >
+                    </li>
+                    <li class="menu__nav-drop-list">
+                      <a class="menu__nav-drop-link" href="#"
+                        >Абстрактные узоры</a
+                      >
+                    </li>
+                    <li class="menu__nav-drop-list">
+                      <a class="menu__nav-drop-link" href="#"
+                        >Натуральная текстура</a
+                      >
+                    </li>
+                    <li class="menu__nav-drop-list">
+                      <a class="menu__nav-drop-link" href="#">Рисованные</a>
+                    </li>
+                    <li class="menu__nav-drop-list">
+                      <a class="menu__nav-drop-link" href="#">Однотонные</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__nav-list">
+                <a class="menu__nav-link" href="#">Новинки</a>
+              </li>
+              <li class="menu__nav-list">
+                <a class="menu__nav-link" href="#">Доставка и оплата </a>
+              </li>
+              <li class="menu__nav-list">
+                <a class="menu__nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <form class="header__search">
+            <input type="text" placeholder="Поиск по каталогу" />
+            <button type="submit"></button>
+          </form>
+
+          <div class="header__box">
+            <a class="header__box-icon basket" href="#">
+              <img src="./images/icons/basket.svg" alt="" />
+              <span>23</span>
+            </a>
+            <a class="header__box-icon favorite" href="#">
+              <img src="./images/icons/favorite.svg" alt="" />
+              <span>12 </span>
+            </a>
+            <a class="header__box-icon lk-modal" href="#lk-login">
+              <img src="./images/icons/exit.svg" alt="" />
+            </a>
+          </div>
+          <div class="menu-burger">
+            <span></span>
+          </div>
+        </div>
+        <div
+          id="lk-login"
+          class="mfp-hide white-popup-block white-popup-block--lk"
+        >
+          <a class="popup-modal-dismiss" href="#">x</a>
+          <h2 class="login-lk__title">Вход в личный кабинет</h2>
+          <div class="login-lk__social">
+            <img src="./images/ya.png" alt="" />
+            <img src="./images/vk.png" alt="" />
+          </div>
+          <form class="login-lk__form login-lk__form--popup">
+            <input
+              class="login-lk__input"
+              type="email"
+              placeholder="E - mail"
+            />
+            <input
+              class="login-lk__input"
+              type="password"
+              placeholder="Пароль "
+            />
+            <div class="login-lk__form-box login-lk__form-box--popup">
+              <a class="login-lk__login" href="#">Войти</a>
+              <div class="login-lk__link-box">
+                <a class="login-lk__password" href="#">Забыли пароль? </a>
+                <a class="login-lk__register login-lk__register--popup" href="#"
+                  >Регистрация</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="product product--favorite-page">
+        <div class="container">
+          <div class="product__title product__title--favorite-page">
+            Избранные товары
+          </div>
+          <div class="favorite-page__filter">
+            <div class="product__filters">
+              <p class="product__filters-text">Сортировать:</p>
+
+              <button class="product__filters-btn active" type="button">
+                по популярности
+              </button>
+              <button class="product__filters-btn" type="button">
+                по цене
+              </button>
+              <button class="product__filters-btn" type="button">
+                по новизне
+              </button>
+            </div>
+            <a class="favorite-page__filter-btn" href="#"
+              >Удалить весь список</a
+            >
+          </div>
+
+          <div class="favorite-page__wrapper">
+            <div class="product__item product__item--favorite-page">
+              <div class="product__img">
+                <img src="./images/content/product-1.png" alt="" />
+              </div>
+              <div class="product__item-title">
+                Чехол-книжка универсальный Red Line...
+              </div>
+              <div class="product__item-pricebox">
+                <div class="product__item-price">7390 р</div>
+                <div class="product__item-oldprice">9739 ₽</div>
+              </div>
+              <div class="product__item-backetbox">
+                <button class="product__item-backet">В корзину</button>
+                <button class="product__item-favorite active"></button>
+              </div>
+            </div>
+            <div
+              class="
+                product__item product__item--like product__item--favorite-page
+              "
+            >
+              <div class="product__img">
+                <img src="./images/content/product-2.png" alt="" />
+              </div>
+              <div class="product__item-title">
+                Бронированое стекло универсальное
+              </div>
+              <div class="product__item-pricebox">
+                <div class="product__item-price">1200 р</div>
+              </div>
+              <div class="product__item-backetbox">
+                <button class="product__item-backet">В корзину</button>
+                <button class="product__item-favorite active"></button>
+              </div>
+            </div>
+            <div class="product__item product__item--favorite-page">
+              <div class="product__img">
+                <img src="./images/content/product-3.png" alt="" />
+              </div>
+              <div class="product__item-title">
+                Стекло защитное для Samsung A50
+              </div>
+              <div class="product__item-pricebox">
+                <div class="product__item-price">7390 ₽</div>
+              </div>
+              <div class="product__item-backetbox">
+                <button class="product__item-backet">В корзину</button>
+                <button class="product__item-favorite active"></button>
+              </div>
+            </div>
+            <div
+              class="
+                product__item product__item--sale product__item--favorite-page
+              "
+            >
+              <div class="product__img">
+                <img src="./images/content/product-4.png" alt="" />
+              </div>
+              <div class="product__item-title">
+                Чехол-книжка универсальный Red Line...
+              </div>
+              <div class="product__item-pricebox">
+                <div class="product__item-price">7390 ₽</div>
+                <div class="product__item-oldprice">9739 ₽</div>
+              </div>
+              <div class="product__item-backetbox">
+                <button class="product__item-backet">В корзину</button>
+                <button class="product__item-favorite active"></button>
+              </div>
+            </div>
+            <div class="product__item product__item--favorite-page">
+              <div class="product__img">
+                <img src="./images/content/product-5.png" alt="" />
+              </div>
+              <div class="product__item-title">
+                Чехол-книжка универсальный Red Line...
+              </div>
+              <div class="product__item-pricebox">
+                <div class="product__item-price">240 ₽</div>
+              </div>
+              <div class="product__item-backetbox">
+                <button class="product__item-backet">В корзину</button>
+                <button class="product__item-favorite active"></button>
+              </div>
+            </div>
+            <div class="product__item product__item--favorite-page">
+              <div class="product__img">
+                <img src="./images/content/product-6.png" alt="" />
+              </div>
+              <div class="product__item-title">
+                Чехол-книжка универсальный Red Line...
+              </div>
+              <div class="product__item-pricebox">
+                <div class="product__item-price">7390 ₽</div>
+                <div class="product__item-oldprice">9739 ₽</div>
+              </div>
+              <div class="product__item-backetbox">
+                <button class="product__item-backet">В корзину</button>
+                <button class="product__item-favorite active"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__contacts">
+          <div class="footer__contacts-copy">Copyright © 2021 Still Skin</div>
+          <div class="footer__contacts-mail">
+            <a href="mailto:contact@stillskin.com">contact@stillskin.com</a>
+          </div>
+          <div class="footer__contacts-call">
+            <div class="footer__contacts-whatsapp">+7 999 482 69 70</div>
+            <div class="footer__contacts-tel">
+              <a href="tel:+79252888023">+7 925 288 80 23</a>
+            </div>
+          </div>
+
+          <div class="footer__contacts-social">
+            <p class="footer__contacts-info">Мы в соц.сетях</p>
+            <a href="#"
+              ><img
+                class="footer__contacts-icon"
+                src="./images/icons/ok.svg"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="footer__contacts-icon"
+                src="./images/icons/vk.svg"
+                alt=""
+            /></a>
+
+            <a href="#"
+              ><img
+                class="footer__contacts-icon"
+                src="./images/icons/facebook.svg"
+                alt=""
+            /></a>
+
+            <a href="#"
+              ><img
+                class="footer__contacts-icon"
+                src="./images/icons/inst.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.formstyler.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

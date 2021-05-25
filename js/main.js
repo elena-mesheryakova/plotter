@@ -57,6 +57,8 @@ $(function(){
     $(this).addClass('active');
   });
 
+  
+
 
   $('.basket-modal').magnificPopup({
     type: 'inline',
@@ -67,6 +69,18 @@ $(function(){
   $(document).on('click', '.popup-modal-dismiss', function (e) {
     e.preventDefault();
     $.magnificPopup.close();
+});
+
+
+$('.lk-modal').magnificPopup({
+  type: 'inline',
+  preloader: false,
+  focus: '#username',
+  modal: true
+});
+$(document).on('click', '.popup-modal-dismiss', function (e) {
+  e.preventDefault();
+  $.magnificPopup.close();
 });
 
 });
